@@ -63,6 +63,42 @@ namespace Final_Project.Controllers
             _repo.DeleteProduct(product);
             return RedirectToAction("Index");
         }
+
+        public IActionResult Pastries()
+        {
+            var pastries = _repo.Pastries();
+            return View(pastries);
+        }
+
+        public IActionResult Cakes()
+        {
+            var cakes = _repo.Cakes();
+            return View(cakes);
+        }
+
+        public IActionResult Cheesecakes()
+        {
+            var cheesecakes = _repo.Cheesecakes();
+            return View(cheesecakes);
+        }
+
+        public IActionResult Pies()
+        {
+            var pies = _repo.Pies();
+            return View(pies);
+        }
+
+        public IActionResult Specials()
+        {
+            var specials = _repo.Specials();
+            return View(specials);
+        }
+
+        public IActionResult Merch()
+        {
+            var merch = _repo.Merch();
+            return View(merch);
+        }
     }
 }
     

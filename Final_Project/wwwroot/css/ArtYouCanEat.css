@@ -1,0 +1,14 @@
+﻿body {
+    background-color: slateblue;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.grid-item {
+    border: 2px, solid;
+    border-color: azure;
+    text-align: center;
+}

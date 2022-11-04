@@ -52,6 +52,37 @@ namespace Final_Project
         {
             _conn.Execute("DELETE FROM Products WHERE ProductID = @id;", new { id = product.ProductID });
         }
+
+        public IEnumerable<Product> Pastries()
+        {
+            return _conn.Query<Product>("SELECT * FROM products WHERE CategoryID = 1;");
+        }
+
+        public IEnumerable<Product> Cakes()
+        {
+            return _conn.Query<Product>("SELECT * FROM products WHERE CategoryID = 2;");
+        }
+
+        public IEnumerable<Product> Cheesecakes()
+        {
+            return _conn.Query<Product>("SELECT * FROM products WHERE CategoryID = 3;");
+        }
+
+        public IEnumerable<Product> Pies()
+        {
+            return _conn.Query<Product>("SELECT * FROM products WHERE CategoryID = 4;");
+        }
+
+        public IEnumerable<Product> Specials()
+        {
+            return _conn.Query<Product>("SELECT * FROM products WHERE CategoryID = 5;");
+        }
+
+        public IEnumerable<Product> Merch()
+        {
+            return _conn.Query<Product>("SELECT * FROM products WHERE CategoryID = 6;");
+        }
     }
 }
+
 

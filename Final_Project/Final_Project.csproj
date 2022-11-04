@@ -8,13 +8,13 @@
 
   <ItemGroup>
     <None Remove="Views\Product\" />
-    <None Remove="Views\ShopMerch\" />
     <None Remove="Dapper" />
     <None Remove="MySql.Data" />
+    <None Remove="Views\About Us\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Product\" />
-    <Folder Include="Views\ShopMerch\" />
+    <Folder Include="Views\About Us\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Dapper" Version="2.0.123" />
