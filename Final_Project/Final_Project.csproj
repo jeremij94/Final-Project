@@ -10,6 +10,7 @@
     <None Remove="Views\Product\" />
     <None Remove="Views\ShopMerch\" />
     <None Remove="Dapper" />
+    <None Remove="MySql.Data" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Product\" />
@@ -17,5 +18,6 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Dapper" Version="2.0.123" />
+    <PackageReference Include="MySql.Data" Version="8.0.31" />
   </ItemGroup>
 </Project>

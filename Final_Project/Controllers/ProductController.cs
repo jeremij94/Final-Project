@@ -20,7 +20,7 @@ namespace Final_Project.Controllers
         public IActionResult Index()
         {
             var products = _repo.GetAllProducts();
-            return View();
+            return View(products);
         }
 
         public IActionResult ViewProduct(int id)
